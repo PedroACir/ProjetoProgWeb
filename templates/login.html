@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <div id="messages" class="alert alert-success alert-dismissible fade show" role="alert">
+                            <ul class="list-unstyled mb-0">
+                                {% for message in messages %}
+                                    <li>{{ message }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                {% endwith %}
+
+                <div class="card shadow-sm p-3">
+                    <h1 class="text-center mb-4">Faça seu login</h1>
+                    <form method="POST" action="{{ url_for('autenticar') }}">
+                        <input type="hidden" name="proxima" value="{{ proxima or url_for('index') }}">
+                        {{ form.csrf_token() }}
+
+                        <div class="form-group">
+                            {{ form.nickname.label(class="form-label") }}
+                            {{ form.nickname(class="form-control", placeholder="Seu nome de usuário") }}
+                        </div>
+                        <div class="form-group">
+                            {{ form.senha.label(class="form-label") }}
+                            {{ form.senha(class="form-control", placeholder="Sua senha") }}
+                        </div>
+                        <div class="justify-content-center mt-2">
+                            <div class="form-group text-center">
+                                {{ form.login(class="btn btn-primary btn-block mr-2 rounded-pill") }}
+                            </div>
+                            <div class="form-group text-center">
+                                <a class="btn btn-danger btn-block mr-2 rounded-pill" href="{{ url_for('index') }}">Voltar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+</body>
+</html>

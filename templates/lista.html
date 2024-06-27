@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block conteudo %}
+<div class="container">
+    <div class="row mb-4">
+    </div>
+
+    <div class="row">
+        {% for jogo in jogos %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ jogo.nome }}</h5>
+                    <p class="card-text"><strong>Categoria:</strong> {{ jogo.categoria }}</p>
+                    <p class="card-text"><strong>Plataforma:</strong> {{ jogo.console }}</p>
+                    <div class="d-flex justify-content-between mt-3">
+                        <a href="{{ url_for('editar', id=jogo.id) }}" class="btn btn-primary btn-sm rounded-pill">Editar/Visualizar</a>
+                        <a href="{{ url_for('deletar', id=jogo.id) }}" class="btn btn-danger btn-sm ml-2 rounded-pill">Deletar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

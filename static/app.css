@@ -1,0 +1,76 @@
+/* Mantendo suas definições originais e ajustando conforme necessário */
+
+body {
+    padding-top: 20px; /* Aumentando um pouco o espaçamento superior */
+}
+
+.btn {
+    margin-bottom: 15px; /* Aumentando o espaçamento inferior dos botões */
+}
+
+.container {
+    border-radius: 8px; /* Arredondando mais os cantos dos containers */
+    max-width: 960px; /* Limitando a largura máxima do container */
+    margin: auto;
+}
+
+.little-container {
+    width: 50%; /* Ajustando a largura para 50% */
+    max-width: 600px; /* Limitando a largura máxima */
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    margin: 5px auto; /* Ajustando um pouco o espaçamento */
+}
+
+.fileContainer {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.fileContainer [type=file] {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle; /* Centralizando verticalmente o conteúdo das células */
+}
+
+.formularioJogo {
+    display: flex;
+    flex-wrap: wrap; /* Permitindo que os elementos quebrem para a próxima linha */
+}
+
+.formularioImagem {
+    margin-right: 20px; /* Ajustando um pouco mais a margem direita */
+}
+
+.buttons {
+    margin-top: 20px; /* Aumentando o espaçamento superior dos botões */
+}
+
+.inputBox {
+    max-width: 700px; /* Limitando a largura máxima dos campos de entrada */
+    margin-bottom: 1em;
+}
+
+.inputsJogo {
+    width: 100%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}

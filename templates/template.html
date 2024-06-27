@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogoteca</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <div class="container py-4">
+        <header class="mb-4 text-center">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-pill">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('novo') }}">Novo Jogo</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col">
+                    {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                    <div id="messages" class="alert alert-success alert-dismissible fade show rounded-pill" role="alert">
+                        <ul class="list-unstyled mb-0">
+                            {% for message in messages %}
+                            <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="display-4">{{ titulo }}</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    {% block conteudo %}{% endblock %}
+                </div>
+            </div>
+   
