@@ -1,28 +1,27 @@
-/* Mantendo suas definições originais e ajustando conforme necessário */
 
 body {
-    padding-top: 20px; /* Aumentando um pouco o espaçamento superior */
+    padding-top: 20px; 
 }
 
 .btn {
-    margin-bottom: 15px; /* Aumentando o espaçamento inferior dos botões */
+    margin-bottom: 15px; 
 }
 
 .container {
-    border-radius: 8px; /* Arredondando mais os cantos dos containers */
-    max-width: 960px; /* Limitando a largura máxima do container */
+    border-radius: 8px; 
+    max-width: 960px; 
     margin: auto;
 }
 
 .little-container {
-    width: 50%; /* Ajustando a largura para 50% */
-    max-width: 600px; /* Limitando a largura máxima */
+    width: 50%; 
+    max-width: 600px; 
     margin: auto;
 }
 
 figcaption {
     text-align: center;
-    margin: 5px auto; /* Ajustando um pouco o espaçamento */
+    margin: 5px auto;
 }
 
 .fileContainer {
@@ -48,24 +47,24 @@ figcaption {
 
 td {
     text-align: center;
-    vertical-align: middle; /* Centralizando verticalmente o conteúdo das células */
+    vertical-align: middle; 
 }
 
 .formularioJogo {
     display: flex;
-    flex-wrap: wrap; /* Permitindo que os elementos quebrem para a próxima linha */
+    flex-wrap: wrap; 
 }
 
 .formularioImagem {
-    margin-right: 20px; /* Ajustando um pouco mais a margem direita */
+    margin-right: 20px; 
 }
 
 .buttons {
-    margin-top: 20px; /* Aumentando o espaçamento superior dos botões */
+    margin-top: 20px; 
 }
 
 .inputBox {
-    max-width: 700px; /* Limitando a largura máxima dos campos de entrada */
+    max-width: 700px; 
     margin-bottom: 1em;
 }
 
