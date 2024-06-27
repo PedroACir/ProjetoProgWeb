@@ -1,8 +1,8 @@
-<h1 align="center">Biblioteca de Jogos:</h1>
+# Biblioteca de Jogos:
 
-<h2>Aplicação integrada a um banco de dados que possibilita "adicionar", "excluir", "editar" e "visualizar" informações de jogos e que também possuí um sistema de autentificação. </h2>
+## plicação integrada a um banco de dados que possibilita "adicionar", "excluir", "editar" e "visualizar" informações de jogos e que também possuí um sistema de autentificação.
 
-<h3> Funcionalidades: </h3>
+### Funcionalidades
 
 - `Funcionalidade 1`: Autentificação de usuário
 - `Funcionalidade 2`: Visualização da biblioteca
@@ -12,7 +12,7 @@
 - `Funcionalidade 6`: Adicionar imagem ao jogo
 - `Funcionalidade 7`: Bloquer funcionalidades para usuários deslogados
 
-<h3>Tecnlogias Utilizadas:</h3>
+### Tecnlogias Utilizadas:
 
 - `Python3`
 - `Flask`
@@ -20,3 +20,74 @@
 - `CSS`
 - `MySQL`
 - `SQLAlchemy`
+
+### Instalação e Requisitos
+
+- [Requisito 1]: "git clone: https://github.com/PedroACir/Projeto-Prog-Web-Ceub
+- [Requisito 2]: Acessar a aplicação.
+- [Requisito 3]: Rodar o comando "pip install -r requirements.txt" no terminal.
+- [Requisito 4]: Rodar o banco de dados "prepara_banco.py".
+- [Requisito 5]: Rodar "jogoteca.py".
+- [Requisito 6]: Se autentificar com o usuário: "teste" e senha: "teste123".
+
+### Uso da API:
+
+#### Endpoints
+
+- Endpoint 1: Autenticação de usuário
+
+Método: POST
+URL: /autenticar
+Descrição: Endpoint para autenticar usuários na aplicação.
+
+- Endpoint 2: Visualização da biblioteca de jogos
+
+Método: GET
+URL: /
+Descrição: Endpoint para visualizar a lista de jogos cadastrados.
+
+- Endpoint 3: Adição de novo jogo
+
+Método: GET
+URL: /novo
+Descrição: Endpoint para exibir o formulário de adição de novo jogo.
+
+- Endpoint 4: Criação de novo jogo
+
+Método: POST
+URL: /criar
+Descrição: Endpoint para criar um novo jogo no banco de dados.
+
+- Endpoint 5: Edição de jogo existente
+
+Método: GET
+URL: /editar
+Descrição: Endpoint para exibir o formulário de edição de um jogo existente.
+
+- Endpoint 6: Atualização de jogo existente
+
+Método: POST
+URL: /atualizar
+Descrição: Endpoint para atualizar as informações de um jogo existente no banco de dados.
+
+- Endpoint 7: Remoção de jogo existente
+
+Método: GET
+URL: /deletar/<int:id>
+Descrição: Endpoint para deletar um jogo existente do banco de dados.
+
+- Endpoint 8: Página de login
+
+Método: GET
+URL: /login
+Descrição: Endpoint para exibir o formulário de login.
+
+- Endpoint 9: Logout de usuário
+
+Método: GET
+URL: /logout
+Descrição: Endpoint para efetuar o logout do usuário da aplicação.
+
+### Contribuição:
+
+- [Contribuidor 1]: Pedro Augusto
