@@ -76,7 +76,7 @@ Descrição: Endpoint para atualizar as informações de um jogo existente no ba
 - `Endpoint 7`: Remoção de jogo existente
 
 Método: GET
-URL: /deletar/<int:id>
+URL: /deletar
 Descrição: Endpoint para deletar um jogo existente do banco de dados.
 
 - `Endpoint 8`: Página de login
