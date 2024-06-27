@@ -10,7 +10,8 @@
 - `Funcionalidade 4`: Editar jogo da biblioteca
 - `Funcionalidade 5`: Remover jogo da biblioteca
 - `Funcionalidade 6`: Adicionar imagem ao jogo
-- `Funcionalidade 7`: Bloquer funcionalidades para usuários deslogados
+- `Funcionalidade 7`: Deslogar usuário
+- `Funcionalidade 8`: Bloquer funcionalidades para usuários deslogados
 
 ### Tecnlogias Utilizadas:
 
@@ -24,13 +25,13 @@
 ### Instalação e Requisitos
 
 - `Requisito 1`: "git clone: https://github.com/PedroACir/ProjetoProgWeb
-- `Requisito 1`: instalar MySQL Server e configura-lo.
-- `Requisito 1`: Acessar a aplicação.
-- `Requisito 1`: Rodar ambiente virtual.
-- `Requisito 1`: Rodar o comando "pip install -r requirements.txt" no terminal.
-- `Requisito 1`: Rodar o banco de dados "prepara_banco.py".
-- `Requisito 1`: Rodar "jogoteca.py".
-- `Requisito 1`: Se autentificar com o usuário: "teste" e senha: "teste123".
+- `Requisito 2`: instalar MySQL Server e configura-lo.
+- `Requisito 3`: Acessar a aplicação.
+- `Requisito 4`: Rodar ambiente virtual.
+- `Requisito 5`: Rodar o comando "pip install -r requirements.txt" no terminal.
+- `Requisito 6`: Rodar o banco de dados "prepara_banco.py".
+- `Requisito 7`: Rodar "jogoteca.py".
+- `Requisito 8`: Se autentificar com o usuário: "teste" e senha: "teste123".
 
 ### Uso da API:
 
