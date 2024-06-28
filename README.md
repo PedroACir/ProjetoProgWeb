@@ -24,7 +24,7 @@
 
 ### Instalação e Requisitos
 
-- `Requisito 1`: "git clone: https://github.com/PedroACir/ProjetoProgWeb
+- `Requisito 1`: "git clone: https://github.com/PedroACir/ProjetoProgWeb.git"
 - `Requisito 2`: instalar MySQL Server e configura-lo.
 - `Requisito 3`: Acessar a aplicação.
 - `Requisito 4`: Rodar ambiente virtual.
